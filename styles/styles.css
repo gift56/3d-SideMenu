@@ -11,5 +11,96 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: #434750;
+}
+
+body ul {
+  position: relative;
+  -webkit-transform: skewY(-15deg);
+          transform: skewY(-15deg);
+}
+
+body ul li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  background-color: #3e3f46;
+  padding: 15px;
+  z-index: var(--i);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+body ul li:last-child::after {
+  -webkit-box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
+body ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-color: #2e3133;
+  width: 40px;
+  height: 100%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+body ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #35383e;
+  top: -40px;
+  left: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+body ul li:hover {
+  background-color: #33a3ee;
+  color: white;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+body ul li:hover::before {
+  background-color: #1f5378;
+}
+
+body ul li:hover::after {
+  background-color: #2982b9;
+}
+
+body ul li a {
+  color: #999;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+body ul li a:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
