@@ -23,6 +23,7 @@ body {
             padding: 15px;
             z-index: var(--i);
             transition: all 300ms ease;
+            cursor: pointer;
             &:last-child {
                 &::after {
                     box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
@@ -72,6 +73,7 @@ body {
                 transition: all 300ms ease;
                 &:hover {
                     color: #ffffff;
+                    cursor: pointer;
                 }
             }
         }
