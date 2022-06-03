@@ -1,5 +1,8 @@
 const activeChange = document.querySelectorAll('ul li');
 
-activeChange.addEventListener('click', () => {
 
+activeChange.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.add('active');
+    })
 })
