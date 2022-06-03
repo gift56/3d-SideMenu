@@ -77,3 +77,14 @@ body {
         }
     }
 }
+.active {
+    background-color: #33a3ee;
+    color: white;
+    transform: translateX(-50px);
+    &::before {
+        background-color: #1f5378;
+    }
+    &::after {
+        background-color: #2982b9;
+    }
+}

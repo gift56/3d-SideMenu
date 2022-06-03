@@ -103,4 +103,19 @@ body ul li a {
 body ul li a:hover {
   color: #ffffff;
 }
+
+.active {
+  background-color: #33a3ee;
+  color: white;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.active::before {
+  background-color: #1f5378;
+}
+
+.active::after {
+  background-color: #2982b9;
+}
 /*# sourceMappingURL=styles.css.map */
